@@ -2,17 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#botao-navegar{
-
-}
-
 #nome-home{
   border-right: 2px solid;
-  width: 14ch;
+  width: 13ch;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(13),
-  blinking 0.5s infinite step-end alternate;
+  animation: typing 1.5s steps(13),
+  blinking 0.5s infinite;
 }
 
 @keyframes typing{
@@ -28,3 +24,16 @@
   }
 }
 
+#botao-navegar{
+  animation: opa 0.5s;
+}
+
+@keyframes opa {
+  from{
+    width: 0;
+    overflow: hidden;
+  }
+  to{
+    width: 150px;
+  }
+}
