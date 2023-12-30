@@ -30,7 +30,7 @@
 }
 
 #container-home{
-  animation: cresce 2s;
+  animation: cresce 2s ease;
 }
 
 @keyframes cresce {
