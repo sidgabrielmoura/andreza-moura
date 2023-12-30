@@ -3,29 +3,20 @@
 @tailwind utilities;
 
 #nome-home{
-  border-right: 2px solid;
-  width: 13ch;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 1.5s steps(13),
-  blinking 0.5s infinite;
+  animation: aparece 3s;
 }
 
-@keyframes typing{
+@keyframes aparece{
   from{
-    width: 0;
+    opacity: 0;
   }
-
-}
-
-@keyframes blinking{
-  50%{
-    border-color: transparent;
+  to{
+    opacity: 1;
   }
 }
 
 #botao-navegar{
-  animation: opa 0.5s;
+  animation: opa 1s;
 }
 
 @keyframes opa {
@@ -35,5 +26,23 @@
   }
   to{
     width: 150px;
+  }
+}
+
+#container-home{
+  animation: cresce 2s;
+}
+
+@keyframes cresce {
+  from{
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    border-radius: 100%;
+  }
+  to{
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
   }
 }
