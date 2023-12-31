@@ -17,7 +17,16 @@
 
 #botao-navegar{
   animation: opa 1s;
+  -webkit-box-reflect: below 5px linear-gradient(transparent, #3232323e);
 }
+
+#botao-navegar:hover{
+  border: 1px solid #deff16;
+  background: transparent;
+  color: #deff16;
+  transition: all 0.5s;
+}
+
 
 @keyframes opa {
   from{
@@ -44,5 +53,52 @@
     height: 100vh;
     width: 100vw;
     border-radius: 0;
+  }
+}
+
+#links::after{
+  content: " ";
+  width: 0%;
+  height: 2px;
+  background-color: #a1b80b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.2s ease-in-out;
+}
+
+#links{
+  position: relative;
+}
+
+#links:hover::after{
+  width: 100%;
+}
+
+#fraseInicialPage{
+  position: absolute;
+  animation: slide 0.8s;
+}
+
+@keyframes slide {
+  from{
+    left: -200px;
+  }
+  to{
+    left: 200px;
+  }
+}
+
+#navBar{
+  animation: slide2 0.8s;
+  position: absolute;
+}
+
+@keyframes slide2 {
+  from{
+    top: -200px;
+  }
+  to{
+    top: 0;
   }
 }

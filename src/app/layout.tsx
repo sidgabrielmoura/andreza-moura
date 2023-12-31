@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Nunito_Sans } from 'next/font/google'
 import './globals.css'
 
-const nunito = Nunito_Sans({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700'] })
+const nunito = Nunito_Sans({ subsets: ['latin'], weight: ['200', '300', '400', '500', '600', '700', '900'] })
 
 export const metadata: Metadata = {
   title: 'A.Moura - Decorações',
